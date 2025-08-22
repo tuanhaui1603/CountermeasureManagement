@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace CountermeasureManagement
 {
-    public partial class Form1 : Form
+    public partial class FormInput : Sunny.UI.UIForm
     {
-        public Form1()
+        public FormInput()
         {
             InitializeComponent();
+        }
+
+        private void FormInput_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Loaddata()
+        {
+
+        }
+        private void Loaddata2()
+        {
+
         }
     }
 }
