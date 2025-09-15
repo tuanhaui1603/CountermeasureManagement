@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dtg1 = new Sunny.UI.UIDataGridView();
             this.btnLamMoi = new Sunny.UI.UIButton();
             this.uiTableLayoutPanel1 = new Sunny.UI.UITableLayoutPanel();
             this.uiTableLayoutPanel2 = new Sunny.UI.UITableLayoutPanel();
@@ -88,7 +84,7 @@
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg1)).BeginInit();
+            this.dtg1 = new System.Windows.Forms.DataGridView();
             this.uiTableLayoutPanel1.SuspendLayout();
             this.uiTableLayoutPanel2.SuspendLayout();
             this.uiTableLayoutPanel3.SuspendLayout();
@@ -99,58 +95,8 @@
             this.uiTableLayoutPanel8.SuspendLayout();
             this.uiTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dtg1
-            // 
-            this.dtg1.AllowUserToAddRows = false;
-            this.dtg1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.dtg1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtg1.BackgroundColor = System.Drawing.Color.White;
-            this.dtg1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dtg1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg1.ColumnHeadersHeight = 50;
-            this.dtg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtg1.EnableHeadersVisualStyles = false;
-            this.dtg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dtg1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.dtg1.Location = new System.Drawing.Point(3, 168);
-            this.dtg1.Name = "dtg1";
-            this.dtg1.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtg1.RowHeadersVisible = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dtg1.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtg1.SelectedIndex = -1;
-            this.dtg1.Size = new System.Drawing.Size(1425, 547);
-            this.dtg1.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.dtg1.TabIndex = 0;
             // 
             // btnLamMoi
             // 
@@ -171,8 +117,8 @@
             // 
             this.uiTableLayoutPanel1.ColumnCount = 1;
             this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.uiTableLayoutPanel1.Controls.Add(this.dtg1, 0, 1);
             this.uiTableLayoutPanel1.Controls.Add(this.uiTableLayoutPanel2, 0, 0);
+            this.uiTableLayoutPanel1.Controls.Add(this.dtg1, 0, 1);
             this.uiTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiTableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.uiTableLayoutPanel1.Name = "uiTableLayoutPanel1";
@@ -286,6 +232,7 @@
             this.btnSua.TabIndex = 1;
             this.btnSua.Text = "Sửa dữ liệu";
             this.btnSua.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -301,6 +248,7 @@
             this.btnXoa.TabIndex = 1;
             this.btnXoa.Text = "Xóa dữ liệu";
             this.btnXoa.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnExcel
             // 
@@ -981,6 +929,38 @@
             this.tabPage2.Text = "Big Data";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // dtg1
+            // 
+            this.dtg1.AllowUserToAddRows = false;
+            this.dtg1.AllowUserToDeleteRows = false;
+            this.dtg1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dtg1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtg1.EnableHeadersVisualStyles = false;
+            this.dtg1.Location = new System.Drawing.Point(3, 168);
+            this.dtg1.Name = "dtg1";
+            this.dtg1.ReadOnly = true;
+            this.dtg1.RowHeadersVisible = false;
+            this.dtg1.Size = new System.Drawing.Size(1425, 547);
+            this.dtg1.TabIndex = 2;
+            this.dtg1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg1_CellDoubleClick);
+            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -992,7 +972,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 1442, 739);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtg1)).EndInit();
             this.uiTableLayoutPanel1.ResumeLayout(false);
             this.uiTableLayoutPanel2.ResumeLayout(false);
             this.uiTableLayoutPanel3.ResumeLayout(false);
@@ -1003,13 +982,12 @@
             this.uiTableLayoutPanel8.ResumeLayout(false);
             this.uiTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtg1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Sunny.UI.UIDataGridView dtg1;
         private Sunny.UI.UIButton btnLamMoi;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel1;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel2;
@@ -1064,6 +1042,7 @@
         private System.Windows.Forms.DateTimePicker dtime2;
         private Sunny.UI.UITextBox tbNcc;
         private Sunny.UI.UITextBox tbPartName;
+        private System.Windows.Forms.DataGridView dtg1;
     }
 }
 

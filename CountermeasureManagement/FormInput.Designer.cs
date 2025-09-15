@@ -63,12 +63,12 @@
             this.materialLabel29 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel30 = new MaterialSkin.Controls.MaterialLabel();
             this.tbActionTamThoi = new Sunny.UI.UIRichTextBox();
-            this.uiTableLayoutPanel6 = new Sunny.UI.UITableLayoutPanel();
-            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
-            this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.cbPhuongAnXuLy = new Sunny.UI.UIComboBox();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.dtime2 = new System.Windows.Forms.DateTimePicker();
+            this.uiTableLayoutPanel6 = new Sunny.UI.UITableLayoutPanel();
+            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
+            this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.uiTableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.uiTableLayoutPanel3.SuspendLayout();
@@ -190,6 +190,7 @@
             this.uiTableLayoutPanel2.Controls.Add(this.tbMucDoQuanTrong, 1, 10);
             this.uiTableLayoutPanel2.Controls.Add(this.numQty, 1, 11);
             this.uiTableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiTableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiTableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.uiTableLayoutPanel2.Name = "uiTableLayoutPanel2";
             this.uiTableLayoutPanel2.RowCount = 12;
@@ -217,7 +218,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(6, 3);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -232,7 +233,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(6, 72);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -247,7 +248,7 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(6, 116);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -277,7 +278,7 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel4.Location = new System.Drawing.Point(6, 174);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -292,7 +293,7 @@
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel5.Location = new System.Drawing.Point(6, 232);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
@@ -307,7 +308,7 @@
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel6.Location = new System.Drawing.Point(6, 290);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
@@ -322,7 +323,7 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel8.Location = new System.Drawing.Point(6, 348);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
@@ -337,7 +338,7 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel9.Location = new System.Drawing.Point(6, 406);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
@@ -352,7 +353,7 @@
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel10.Location = new System.Drawing.Point(6, 464);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
@@ -367,7 +368,7 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel11.Location = new System.Drawing.Point(6, 522);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
@@ -382,7 +383,7 @@
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel12.Location = new System.Drawing.Point(6, 580);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
@@ -397,7 +398,7 @@
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel13.Location = new System.Drawing.Point(6, 638);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
@@ -697,7 +698,7 @@
             this.materialLabel29.AutoSize = true;
             this.materialLabel29.Depth = 0;
             this.materialLabel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel29.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel29.Location = new System.Drawing.Point(5, 2);
             this.materialLabel29.MouseState = MaterialSkin.MouseState.HOVER;
@@ -712,7 +713,7 @@
             this.materialLabel30.AutoSize = true;
             this.materialLabel30.Depth = 0;
             this.materialLabel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel30.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel30.Location = new System.Drawing.Point(5, 50);
             this.materialLabel30.MouseState = MaterialSkin.MouseState.HOVER;
@@ -736,48 +737,6 @@
             this.tbActionTamThoi.Size = new System.Drawing.Size(473, 206);
             this.tbActionTamThoi.TabIndex = 1;
             this.tbActionTamThoi.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiTableLayoutPanel6
-            // 
-            this.uiTableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.uiTableLayoutPanel6.ColumnCount = 1;
-            this.uiTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.61965F));
-            this.uiTableLayoutPanel6.Controls.Add(this.materialLabel22, 0, 0);
-            this.uiTableLayoutPanel6.Controls.Add(this.picHinhAnh, 0, 1);
-            this.uiTableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiTableLayoutPanel6.Location = new System.Drawing.Point(6, 332);
-            this.uiTableLayoutPanel6.Name = "uiTableLayoutPanel6";
-            this.uiTableLayoutPanel6.RowCount = 2;
-            this.uiTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.593407F));
-            this.uiTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.40659F));
-            this.uiTableLayoutPanel6.Size = new System.Drawing.Size(653, 364);
-            this.uiTableLayoutPanel6.TabIndex = 0;
-            this.uiTableLayoutPanel6.TagString = null;
-            // 
-            // materialLabel22
-            // 
-            this.materialLabel22.AutoSize = true;
-            this.materialLabel22.Depth = 0;
-            this.materialLabel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel22.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel22.Location = new System.Drawing.Point(5, 2);
-            this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel22.Name = "materialLabel22";
-            this.materialLabel22.Size = new System.Drawing.Size(643, 23);
-            this.materialLabel22.TabIndex = 0;
-            this.materialLabel22.Text = "Hình ảnh:";
-            this.materialLabel22.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // picHinhAnh
-            // 
-            this.picHinhAnh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picHinhAnh.Location = new System.Drawing.Point(5, 30);
-            this.picHinhAnh.Name = "picHinhAnh";
-            this.picHinhAnh.Size = new System.Drawing.Size(643, 329);
-            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHinhAnh.TabIndex = 1;
-            this.picHinhAnh.TabStop = false;
             // 
             // cbPhuongAnXuLy
             // 
@@ -808,7 +767,7 @@
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel7.Location = new System.Drawing.Point(5, 268);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
@@ -829,6 +788,48 @@
             this.dtime2.Size = new System.Drawing.Size(475, 26);
             this.dtime2.TabIndex = 1;
             // 
+            // uiTableLayoutPanel6
+            // 
+            this.uiTableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.uiTableLayoutPanel6.ColumnCount = 1;
+            this.uiTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.61965F));
+            this.uiTableLayoutPanel6.Controls.Add(this.materialLabel22, 0, 0);
+            this.uiTableLayoutPanel6.Controls.Add(this.picHinhAnh, 0, 1);
+            this.uiTableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiTableLayoutPanel6.Location = new System.Drawing.Point(6, 332);
+            this.uiTableLayoutPanel6.Name = "uiTableLayoutPanel6";
+            this.uiTableLayoutPanel6.RowCount = 2;
+            this.uiTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.593407F));
+            this.uiTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.40659F));
+            this.uiTableLayoutPanel6.Size = new System.Drawing.Size(653, 364);
+            this.uiTableLayoutPanel6.TabIndex = 0;
+            this.uiTableLayoutPanel6.TagString = null;
+            // 
+            // materialLabel22
+            // 
+            this.materialLabel22.AutoSize = true;
+            this.materialLabel22.Depth = 0;
+            this.materialLabel22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel22.Location = new System.Drawing.Point(5, 2);
+            this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel22.Name = "materialLabel22";
+            this.materialLabel22.Size = new System.Drawing.Size(643, 23);
+            this.materialLabel22.TabIndex = 0;
+            this.materialLabel22.Text = "Hình ảnh:";
+            this.materialLabel22.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // picHinhAnh
+            // 
+            this.picHinhAnh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picHinhAnh.Location = new System.Drawing.Point(5, 30);
+            this.picHinhAnh.Name = "picHinhAnh";
+            this.picHinhAnh.Size = new System.Drawing.Size(643, 329);
+            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHinhAnh.TabIndex = 1;
+            this.picHinhAnh.TabStop = false;
+            // 
             // FormInput
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -839,7 +840,7 @@
             this.MinimizeBox = false;
             this.Name = "FormInput";
             this.Text = "Thêm dữ liệu";
-            this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 800, 450);
+            this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 1127, 793);
             this.Load += new System.EventHandler(this.FormInput_Load);
             this.uiTableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

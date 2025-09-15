@@ -11,5 +11,7 @@ namespace CountermeasureManagement
         public static string Name { get; set; }
         public static string User { get; set; }
         public static string Level { get; set; }
+        public static string InsertOrDelete; 
+        public static List<DataRecord> dataRecords = new List<DataRecord>();
     }
 }

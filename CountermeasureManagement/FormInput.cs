@@ -54,7 +54,14 @@ namespace CountermeasureManagement
         }
         private void FormInput_Load(object sender, EventArgs e)
         {
-
+            if (Global.InsertOrDelete == "INSERT")
+            {
+                btnThem.Text = "Thêm";
+            }
+            else
+            {
+                btnThem.Text = "Sửa";
+            }    
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -66,11 +73,23 @@ namespace CountermeasureManagement
         {
             if (CheckValueInsert())
             {
-                DialogResult dlt = MessageBox.Show("Xác nhận thêm dữ liệu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dlt == DialogResult.Yes)
+                if (Global.InsertOrDelete == "INSERT")
                 {
-                    await InsertData();
+                    DialogResult dlt = MessageBox.Show("Xác nhận thêm dữ liệu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dlt == DialogResult.Yes)
+                    {
+                        await InsertData();
+                    }
                 }
+                else
+                {
+                    DialogResult dlt = MessageBox.Show("Xác nhận sửa dữ liệu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dlt == DialogResult.Yes)
+                    {
+                        await EditData();
+                    }
+                }
+                
             }
         }
         private Boolean CheckValueInsert()
@@ -136,8 +155,36 @@ namespace CountermeasureManagement
         {
             try
             {
-                //string query = "";
-                //db
+                string rd11 = "", rd22 = "";
+                if (rd1.Checked)
+                    rd11 = "v";
+                if (rd2.Checked)
+                    rd22 = "v";
+                string query = "INSERT INTO `data`(`date`, `status_error`, `part_name`, `area`, `ncc_c1`, `ncc_c2`, `pic_qc`, `image`, `content_error`, `old_error`," +
+                    " `new_error`, `rank`, `qty`, `qty_total`, `solution`, `action`, `plan_complete`, `nguoi_nhap`, `time_nhap`) VALUES " +
+                    $"('{dtime1.Text}','{cbTinhTrangLoi.Text}','{cbPartName.Text}','{cbKvPhatSinh.Text}','{tbNccc1.Text}','{tbNccc2.Text}','{cbPicPqc.Text}'" +
+                    $",'','{tbNoiDungLoi.Text}','{rd11}','{rd22}','{tbMucDoQuanTrong.Text}','{numQty.Value}',''," +
+                    $"'{cbPhuongAnXuLy.Text}','{tbActionTamThoi.Text}','{dtime2.Text}','{Global.Name}','{DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")}')";
+                await db.ExecuteNonQueryAsync(query);
+                MessageBox.Show("Thêm dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi thêm dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private async Task EditData()
+        {
+            try
+            {
+                string rd11 = "", rd22 = "";
+                if (rd1.Checked)
+                    rd11 = "v";
+                if (rd2.Checked)
+                    rd22 = "v";
+                string query = "";
+                await db.ExecuteNonQueryAsync(query);
+                MessageBox.Show("Sửa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
