@@ -40,10 +40,10 @@
             this.uiTableLayoutPanel3 = new Sunny.UI.UITableLayoutPanel();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiTableLayoutPanel4 = new Sunny.UI.UITableLayoutPanel();
-            this.uiButton1 = new Sunny.UI.UIButton();
-            this.uiButton2 = new Sunny.UI.UIButton();
-            this.uiButton3 = new Sunny.UI.UIButton();
-            this.uiButton4 = new Sunny.UI.UIButton();
+            this.btnThemData = new Sunny.UI.UIButton();
+            this.btnSua = new Sunny.UI.UIButton();
+            this.btnXoa = new Sunny.UI.UIButton();
+            this.btnExcel = new Sunny.UI.UIButton();
             this.dtime1 = new System.Windows.Forms.DateTimePicker();
             this.dtime2 = new System.Windows.Forms.DateTimePicker();
             this.tbNcc = new Sunny.UI.UITextBox();
@@ -237,10 +237,10 @@
             this.uiTableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.uiTableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.uiTableLayoutPanel4.Controls.Add(this.btnLamMoi, 0, 0);
-            this.uiTableLayoutPanel4.Controls.Add(this.uiButton1, 1, 0);
-            this.uiTableLayoutPanel4.Controls.Add(this.uiButton2, 0, 1);
-            this.uiTableLayoutPanel4.Controls.Add(this.uiButton3, 1, 1);
-            this.uiTableLayoutPanel4.Controls.Add(this.uiButton4, 2, 0);
+            this.uiTableLayoutPanel4.Controls.Add(this.btnThemData, 1, 0);
+            this.uiTableLayoutPanel4.Controls.Add(this.btnSua, 0, 1);
+            this.uiTableLayoutPanel4.Controls.Add(this.btnXoa, 1, 1);
+            this.uiTableLayoutPanel4.Controls.Add(this.btnExcel, 2, 0);
             this.uiTableLayoutPanel4.Controls.Add(this.dtime1, 2, 1);
             this.uiTableLayoutPanel4.Controls.Add(this.dtime2, 2, 2);
             this.uiTableLayoutPanel4.Controls.Add(this.tbNcc, 1, 2);
@@ -256,69 +256,67 @@
             this.uiTableLayoutPanel4.TabIndex = 3;
             this.uiTableLayoutPanel4.TagString = null;
             // 
-            // uiButton1
+            // btnThemData
             // 
-            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiButton1.FillColor = System.Drawing.Color.DarkSeaGreen;
-            this.uiButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton1.Location = new System.Drawing.Point(144, 3);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Radius = 16;
-            this.uiButton1.Size = new System.Drawing.Size(135, 28);
-            this.uiButton1.TabIndex = 1;
-            this.uiButton1.Text = "Thêm dữ liệu";
-            this.uiButton1.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton1.Click += new System.EventHandler(this.btnLamMoi_Click);
+            this.btnThemData.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThemData.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnThemData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThemData.Location = new System.Drawing.Point(144, 3);
+            this.btnThemData.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnThemData.Name = "btnThemData";
+            this.btnThemData.Radius = 16;
+            this.btnThemData.Size = new System.Drawing.Size(135, 28);
+            this.btnThemData.TabIndex = 1;
+            this.btnThemData.Text = "Thêm dữ liệu";
+            this.btnThemData.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThemData.Click += new System.EventHandler(this.btnThemData_Click);
             // 
-            // uiButton2
+            // btnSua
             // 
-            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.uiButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton2.Location = new System.Drawing.Point(3, 37);
-            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton2.Name = "uiButton2";
-            this.uiButton2.Radius = 17;
-            this.uiButton2.Size = new System.Drawing.Size(135, 28);
-            this.uiButton2.TabIndex = 1;
-            this.uiButton2.Text = "Sửa dữ liệu";
-            this.uiButton2.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton2.Click += new System.EventHandler(this.btnLamMoi_Click);
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSua.Location = new System.Drawing.Point(3, 37);
+            this.btnSua.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Radius = 17;
+            this.btnSua.Size = new System.Drawing.Size(135, 28);
+            this.btnSua.TabIndex = 1;
+            this.btnSua.Text = "Sửa dữ liệu";
+            this.btnSua.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             // 
-            // uiButton3
+            // btnXoa
             // 
-            this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton3.Location = new System.Drawing.Point(144, 37);
-            this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton3.Name = "uiButton3";
-            this.uiButton3.Radius = 17;
-            this.uiButton3.Size = new System.Drawing.Size(135, 28);
-            this.uiButton3.TabIndex = 1;
-            this.uiButton3.Text = "Xóa dữ liệu";
-            this.uiButton3.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton3.Click += new System.EventHandler(this.btnLamMoi_Click);
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXoa.Location = new System.Drawing.Point(144, 37);
+            this.btnXoa.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Radius = 17;
+            this.btnXoa.Size = new System.Drawing.Size(135, 28);
+            this.btnXoa.TabIndex = 1;
+            this.btnXoa.Text = "Xóa dữ liệu";
+            this.btnXoa.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             // 
-            // uiButton4
+            // btnExcel
             // 
-            this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiButton4.FillColor = System.Drawing.Color.Green;
-            this.uiButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton4.Location = new System.Drawing.Point(285, 3);
-            this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton4.Name = "uiButton4";
-            this.uiButton4.Radius = 16;
-            this.uiButton4.Size = new System.Drawing.Size(137, 28);
-            this.uiButton4.TabIndex = 1;
-            this.uiButton4.Text = "Excel";
-            this.uiButton4.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiButton4.Click += new System.EventHandler(this.btnLamMoi_Click);
+            this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExcel.FillColor = System.Drawing.Color.Green;
+            this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnExcel.Location = new System.Drawing.Point(285, 3);
+            this.btnExcel.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Radius = 16;
+            this.btnExcel.Size = new System.Drawing.Size(137, 28);
+            this.btnExcel.TabIndex = 1;
+            this.btnExcel.Text = "Excel";
+            this.btnExcel.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // dtime1
             // 
@@ -978,7 +976,7 @@
             // 
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(200, 60);
+            this.tabPage2.Size = new System.Drawing.Size(1431, 718);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Big Data";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1017,10 +1015,10 @@
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel2;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel3;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel4;
-        private Sunny.UI.UIButton uiButton1;
-        private Sunny.UI.UIButton uiButton2;
-        private Sunny.UI.UIButton uiButton3;
-        private Sunny.UI.UIButton uiButton4;
+        private Sunny.UI.UIButton btnThemData;
+        private Sunny.UI.UIButton btnSua;
+        private Sunny.UI.UIButton btnXoa;
+        private Sunny.UI.UIButton btnExcel;
         private Sunny.UI.UITabControl uiTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;

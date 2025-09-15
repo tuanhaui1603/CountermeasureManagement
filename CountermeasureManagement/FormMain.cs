@@ -74,16 +74,27 @@ namespace CountermeasureManagement
                     " data.area as 'Khu vực phát sinh', data.ncc_c1 as 'NCC Cấp1', data.ncc_c2 as 'NCC Cấp2', data.pic_qc as 'PIC QC'," +
                     " `image`, data.content_error as 'Nội dung lỗi', data.old_error as 'Cũ',data.new_error as 'Mới',data.rank as 'Rank'," +
                     " data.qty as 'Qty', data.qty_total as 'Qty Total', data.solution as 'Phương án xử lý lỗi', data.action as 'Action tạm thời'," +
-                    "data_reason_solution.date_completed_plan as 'Plan ht đối sách',data_reason_solution.actual_date_completed_plan as 'Thực tế ht đối sách'," +
+                    "data.plan_complete as 'Plan ht đối sách',data_reason_solution.actual_date_completed_plan as 'Thực tế ht đối sách'," +
                     "data_reason_solution.reason as 'Nguyên nhân',data_reason_solution.solution as 'Đối sách' " +
                     "FROM data LEFT JOIN data_reason_solution ON data.no = data_reason_solution.no_id " +
                     $"where data.date between '{dtime1.Text} 00:01:00' and '{dtime2.Text} 23:59:59' order by data.date DESC";
-                dtg1.DataSource = await Task.Run(() => db.GetDataTable(query));
+                dtg1.DataSource = await db.GetDataTableAsync(query);
             }
             catch (Exception ex)
             {
                 WriteLog("Lỗi tải dữ liệu: " + ex.Message);
             }
+        }
+
+        private void btnThemData_Click(object sender, EventArgs e)
+        {
+            FormInput formInput = new FormInput();
+            formInput.ShowDialog();
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
