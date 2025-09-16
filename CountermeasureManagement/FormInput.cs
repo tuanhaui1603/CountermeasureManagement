@@ -11,12 +11,13 @@ using System.Windows.Forms;
 
 namespace CountermeasureManagement
 {
-    public partial class FormInput : Sunny.UI.UIForm
+    public partial class FormInput : Form
 
     {
         private static readonly object lockObj = new object();
         string connStr;
         MySQLHelper db;
+        string _NO_;
         public FormInput()
         {
             InitializeComponent();
@@ -61,14 +62,34 @@ namespace CountermeasureManagement
             else
             {
                 btnThem.Text = "Sửa";
+                foreach (var data in Global.dataRecords)
+                {
+                    _NO_ = data.No; 
+                    dtime1.Text = data.Date;
+                    cbTinhTrangLoi.Text = data.StatusError;
+                    tbPartName.Text = data.PartName;
+                    cbKvPhatSinh.Text = data.Area;
+                    tbNccc1.Text = data.NccC1;
+                    tbNccc2.Text = data.NccC2;
+                    cbPicPqc.Text = data.PicQc;
+                    richNoiDungLoi.Text = data.ContentError;
+                    if (data.OldError == "v")
+                        rd1.Checked = true;
+                    if (data.NewError == "v")
+                        rd2.Checked = true;
+                    cbMucDoQuanTrong.Text = data.Rank;
+                    numQty.Value = Int32.Parse(data.Qty);
+                    cbPhuongAnXuLy.Text = data.Solution;
+                    richActionTamThoi.Text = data.Action;
+                    dtime2.Text = data.PlanComplete;
+                    break;
+                }                    
             }    
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
         private async void btnThem_Click(object sender, EventArgs e)
         {
             if (CheckValueInsert())
@@ -83,11 +104,19 @@ namespace CountermeasureManagement
                 }
                 else
                 {
-                    DialogResult dlt = MessageBox.Show("Xác nhận sửa dữ liệu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (dlt == DialogResult.Yes)
+                    if(_NO_ == "")
                     {
-                        await EditData();
-                    }
+                        MessageBox.Show("Chưa có dữ liệu để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }    
+                    else
+                    {
+                        DialogResult dlt = MessageBox.Show("Xác nhận sửa dữ liệu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (dlt == DialogResult.Yes)
+                        {
+                            await EditData();
+                        }
+                    }    
                 }
                 
             }
@@ -99,7 +128,7 @@ namespace CountermeasureManagement
                 MessageBox.Show("Tình trạng lỗi không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(cbPartName.Text))
+            else if (string.IsNullOrWhiteSpace(tbPartName.Text))
             {
                 MessageBox.Show("Part name không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -124,12 +153,12 @@ namespace CountermeasureManagement
                 MessageBox.Show("PIC PQC không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(tbNoiDungLoi.Text))
+            else if (string.IsNullOrWhiteSpace(richNoiDungLoi.Text))
             {
                 MessageBox.Show("Nội dung lỗi không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(tbMucDoQuanTrong.Text))
+            else if (string.IsNullOrWhiteSpace(cbMucDoQuanTrong.Text))
             {
                 MessageBox.Show("Mức độ quan trọng không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -144,7 +173,7 @@ namespace CountermeasureManagement
                 MessageBox.Show("Phương án xử lý lỗi không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(tbActionTamThoi.Text))
+            else if (string.IsNullOrWhiteSpace(richActionTamThoi.Text))
             {
                 MessageBox.Show("Action tạm thời không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -162,9 +191,9 @@ namespace CountermeasureManagement
                     rd22 = "v";
                 string query = "INSERT INTO `data`(`date`, `status_error`, `part_name`, `area`, `ncc_c1`, `ncc_c2`, `pic_qc`, `image`, `content_error`, `old_error`," +
                     " `new_error`, `rank`, `qty`, `qty_total`, `solution`, `action`, `plan_complete`, `nguoi_nhap`, `time_nhap`) VALUES " +
-                    $"('{dtime1.Text}','{cbTinhTrangLoi.Text}','{cbPartName.Text}','{cbKvPhatSinh.Text}','{tbNccc1.Text}','{tbNccc2.Text}','{cbPicPqc.Text}'" +
-                    $",'','{tbNoiDungLoi.Text}','{rd11}','{rd22}','{tbMucDoQuanTrong.Text}','{numQty.Value}',''," +
-                    $"'{cbPhuongAnXuLy.Text}','{tbActionTamThoi.Text}','{dtime2.Text}','{Global.Name}','{DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")}')";
+                    $"('{dtime1.Text}','{cbTinhTrangLoi.Text}','{tbPartName.Text}','{cbKvPhatSinh.Text}','{tbNccc1.Text}','{tbNccc2.Text}','{cbPicPqc.Text}'" +
+                    $",'','{richNoiDungLoi.Text}','{rd11}','{rd22}','{cbMucDoQuanTrong.Text}','{numQty.Value}',''," +
+                    $"'{cbPhuongAnXuLy.Text}','{richActionTamThoi.Text}','{dtime2.Text}','{Global.Name}','{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}')";
                 await db.ExecuteNonQueryAsync(query);
                 MessageBox.Show("Thêm dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -182,7 +211,12 @@ namespace CountermeasureManagement
                     rd11 = "v";
                 if (rd2.Checked)
                     rd22 = "v";
-                string query = "";
+                string query = $"UPDATE `data` SET `date`='{dtime1.Text}',`status_error`='{cbTinhTrangLoi.Text.Trim()}',`part_name`='{tbPartName.Text.Trim()}',`area`='{cbKvPhatSinh.Text.Trim()}'" +
+                    $",`ncc_c1`='{tbNccc1.Text.Trim()}',`ncc_c2`='{tbNccc2.Text.Trim()}'," +
+                    $"`pic_qc`='{cbPicPqc.Text.Trim()}',`image`='',`content_error`='{richNoiDungLoi.Text.Trim()}',`old_error`='{rd11}',`new_error`='{rd22}'," +
+                    $"`rank`='{cbMucDoQuanTrong.Text.Trim()}',`qty`='{numQty.Text.Trim()}'," +
+                    $"`solution`='{cbPhuongAnXuLy.Text.Trim()}',`action`='{richActionTamThoi.Text.Trim()}',`plan_complete`='{dtime2.Text.Trim()}'" +
+                    $" WHERE `no` = '{_NO_}'";
                 await db.ExecuteNonQueryAsync(query);
                 MessageBox.Show("Sửa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
