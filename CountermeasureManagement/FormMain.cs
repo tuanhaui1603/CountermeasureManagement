@@ -32,6 +32,7 @@ namespace CountermeasureManagement
         {
 
             Global.Name = "Võ Quang Tuấn";
+            Global.User = "";
         }
         private Dictionary<string, string> LoadConfig(string path)
         {

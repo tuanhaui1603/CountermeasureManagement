@@ -729,6 +729,7 @@
             this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHinhAnh.TabIndex = 1;
             this.picHinhAnh.TabStop = false;
+            this.picHinhAnh.DoubleClick += new System.EventHandler(this.picHinhAnh_DoubleClick);
             // 
             // FormInput
             // 

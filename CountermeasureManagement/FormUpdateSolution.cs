@@ -84,7 +84,31 @@ namespace CountermeasureManagement
             {
                 string query = "INSERT INTO `data_reason_solution`(`no_id`, `actual_date_completed_plan`, `reason`, `solution`,`name_update`,`time_update`)" +
                     $" VALUES ('{_NO_}','{dtime.Text}','{richNguyenNhan.Text.Trim()}','{RichDoiSach.Text.Trim()}','{Global.Name}','{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}')";
+                string _4m1_con_nguoi = "0", _4m1_phuong_phap="0", _4m1_may_moc = "0", _4m1_vat_lieu = "0";
+                string _4m2_con_nguoi = "0", _4m2_phuong_phap = "0", _4m2_may_moc = "0", _4m2_vat_lieu = "0";
+                if(rd1_ConNguoi.Checked)
+                    _4m1_con_nguoi = "1";
+                if (rd1_PhuongPhap.Checked)
+                    _4m1_phuong_phap = "1";
+                if (rd1_MayMoc.Checked)
+                    _4m1_may_moc = "1";
+                if (rd1_VatLieu.Checked)
+                    _4m1_vat_lieu = "1";
+                if (rd2_ConNguoi.Checked)
+                    _4m2_con_nguoi = "1";
+                if (rd2_PhuongPhap.Checked)
+                    _4m2_phuong_phap = "1";
+                if (rd2_MayMoc.Checked)
+                    _4m2_may_moc = "1";
+                if (rd2_VatLieu.Checked)
+                    _4m2_vat_lieu = "1";
+                string query_4m_nguyenNhan = "INSERT INTO `reason`(`no_id`, `con_nguoi`, `phuong_phap`, `may_moc`, `vat_lieu`) " +
+                    $"VALUES ('{_NO_}','{_4m1_con_nguoi}','{_4m1_phuong_phap}','{_4m1_may_moc}','{_4m1_vat_lieu}')";
+                string query_4m_doiSach = "INSERT INTO `method`(`no_id`, `con_nguoi`, `phuong_phap`, `may_moc`, `vat_lieu`) " +
+                    $"VALUES ('{_NO_}','{_4m2_con_nguoi}','{_4m2_phuong_phap}','{_4m2_may_moc}','{_4m2_vat_lieu}')";
                 await db.ExecuteNonQueryAsync(query);
+                await db.ExecuteNonQueryAsync(query_4m_nguyenNhan);
+                await db.ExecuteNonQueryAsync(query_4m_doiSach);
                 MessageBox.Show("Update đối sách thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch

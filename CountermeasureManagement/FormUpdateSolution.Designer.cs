@@ -31,16 +31,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.rd1_ConNguoi = new System.Windows.Forms.RadioButton();
-            this.rd1_PhuongPhap = new System.Windows.Forms.RadioButton();
-            this.rd1_MayMoc = new System.Windows.Forms.RadioButton();
-            this.rd1_VatLieu = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.rd2_ConNguoi = new System.Windows.Forms.RadioButton();
-            this.rd2_PhuongPhap = new System.Windows.Forms.RadioButton();
-            this.rd2_MayMoc = new System.Windows.Forms.RadioButton();
-            this.rd2_VatLieu = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.RichDoiSach = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -49,6 +41,14 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.dtime = new System.Windows.Forms.DateTimePicker();
+            this.rd1_ConNguoi = new System.Windows.Forms.CheckBox();
+            this.rd1_PhuongPhap = new System.Windows.Forms.CheckBox();
+            this.rd1_MayMoc = new System.Windows.Forms.CheckBox();
+            this.rd1_VatLieu = new System.Windows.Forms.CheckBox();
+            this.rd2_ConNguoi = new System.Windows.Forms.CheckBox();
+            this.rd2_PhuongPhap = new System.Windows.Forms.CheckBox();
+            this.rd2_MayMoc = new System.Windows.Forms.CheckBox();
+            this.rd2_VatLieu = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -117,48 +117,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(525, 112);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // rd1_ConNguoi
-            // 
-            this.rd1_ConNguoi.AutoSize = true;
-            this.rd1_ConNguoi.Checked = true;
-            this.rd1_ConNguoi.Location = new System.Drawing.Point(3, 3);
-            this.rd1_ConNguoi.Name = "rd1_ConNguoi";
-            this.rd1_ConNguoi.Size = new System.Drawing.Size(94, 22);
-            this.rd1_ConNguoi.TabIndex = 0;
-            this.rd1_ConNguoi.TabStop = true;
-            this.rd1_ConNguoi.Text = "Con người";
-            this.rd1_ConNguoi.UseVisualStyleBackColor = true;
-            // 
-            // rd1_PhuongPhap
-            // 
-            this.rd1_PhuongPhap.AutoSize = true;
-            this.rd1_PhuongPhap.Location = new System.Drawing.Point(3, 31);
-            this.rd1_PhuongPhap.Name = "rd1_PhuongPhap";
-            this.rd1_PhuongPhap.Size = new System.Drawing.Size(113, 22);
-            this.rd1_PhuongPhap.TabIndex = 0;
-            this.rd1_PhuongPhap.Text = "Phương pháp";
-            this.rd1_PhuongPhap.UseVisualStyleBackColor = true;
-            // 
-            // rd1_MayMoc
-            // 
-            this.rd1_MayMoc.AutoSize = true;
-            this.rd1_MayMoc.Location = new System.Drawing.Point(3, 59);
-            this.rd1_MayMoc.Name = "rd1_MayMoc";
-            this.rd1_MayMoc.Size = new System.Drawing.Size(88, 22);
-            this.rd1_MayMoc.TabIndex = 0;
-            this.rd1_MayMoc.Text = "Máy móc";
-            this.rd1_MayMoc.UseVisualStyleBackColor = true;
-            // 
-            // rd1_VatLieu
-            // 
-            this.rd1_VatLieu.AutoSize = true;
-            this.rd1_VatLieu.Location = new System.Drawing.Point(3, 87);
-            this.rd1_VatLieu.Name = "rd1_VatLieu";
-            this.rd1_VatLieu.Size = new System.Drawing.Size(73, 22);
-            this.rd1_VatLieu.TabIndex = 0;
-            this.rd1_VatLieu.Text = "Vật liệu";
-            this.rd1_VatLieu.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -191,48 +149,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(525, 112);
             this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // rd2_ConNguoi
-            // 
-            this.rd2_ConNguoi.AutoSize = true;
-            this.rd2_ConNguoi.Checked = true;
-            this.rd2_ConNguoi.Location = new System.Drawing.Point(3, 3);
-            this.rd2_ConNguoi.Name = "rd2_ConNguoi";
-            this.rd2_ConNguoi.Size = new System.Drawing.Size(94, 22);
-            this.rd2_ConNguoi.TabIndex = 0;
-            this.rd2_ConNguoi.TabStop = true;
-            this.rd2_ConNguoi.Text = "Con người";
-            this.rd2_ConNguoi.UseVisualStyleBackColor = true;
-            // 
-            // rd2_PhuongPhap
-            // 
-            this.rd2_PhuongPhap.AutoSize = true;
-            this.rd2_PhuongPhap.Location = new System.Drawing.Point(3, 31);
-            this.rd2_PhuongPhap.Name = "rd2_PhuongPhap";
-            this.rd2_PhuongPhap.Size = new System.Drawing.Size(113, 22);
-            this.rd2_PhuongPhap.TabIndex = 0;
-            this.rd2_PhuongPhap.Text = "Phương pháp";
-            this.rd2_PhuongPhap.UseVisualStyleBackColor = true;
-            // 
-            // rd2_MayMoc
-            // 
-            this.rd2_MayMoc.AutoSize = true;
-            this.rd2_MayMoc.Location = new System.Drawing.Point(3, 59);
-            this.rd2_MayMoc.Name = "rd2_MayMoc";
-            this.rd2_MayMoc.Size = new System.Drawing.Size(88, 22);
-            this.rd2_MayMoc.TabIndex = 0;
-            this.rd2_MayMoc.Text = "Máy móc";
-            this.rd2_MayMoc.UseVisualStyleBackColor = true;
-            // 
-            // rd2_VatLieu
-            // 
-            this.rd2_VatLieu.AutoSize = true;
-            this.rd2_VatLieu.Location = new System.Drawing.Point(3, 87);
-            this.rd2_VatLieu.Name = "rd2_VatLieu";
-            this.rd2_VatLieu.Size = new System.Drawing.Size(73, 22);
-            this.rd2_VatLieu.TabIndex = 0;
-            this.rd2_VatLieu.Text = "Vật liệu";
-            this.rd2_VatLieu.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -332,6 +248,102 @@
             this.dtime.Size = new System.Drawing.Size(312, 24);
             this.dtime.TabIndex = 1;
             // 
+            // rd1_ConNguoi
+            // 
+            this.rd1_ConNguoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd1_ConNguoi.AutoSize = true;
+            this.rd1_ConNguoi.Location = new System.Drawing.Point(3, 3);
+            this.rd1_ConNguoi.Name = "rd1_ConNguoi";
+            this.rd1_ConNguoi.Size = new System.Drawing.Size(95, 22);
+            this.rd1_ConNguoi.TabIndex = 1;
+            this.rd1_ConNguoi.Text = "Con người";
+            this.rd1_ConNguoi.UseVisualStyleBackColor = true;
+            // 
+            // rd1_PhuongPhap
+            // 
+            this.rd1_PhuongPhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd1_PhuongPhap.AutoSize = true;
+            this.rd1_PhuongPhap.Location = new System.Drawing.Point(3, 31);
+            this.rd1_PhuongPhap.Name = "rd1_PhuongPhap";
+            this.rd1_PhuongPhap.Size = new System.Drawing.Size(114, 22);
+            this.rd1_PhuongPhap.TabIndex = 1;
+            this.rd1_PhuongPhap.Text = "Phương pháp";
+            this.rd1_PhuongPhap.UseVisualStyleBackColor = true;
+            // 
+            // rd1_MayMoc
+            // 
+            this.rd1_MayMoc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd1_MayMoc.AutoSize = true;
+            this.rd1_MayMoc.Location = new System.Drawing.Point(3, 59);
+            this.rd1_MayMoc.Name = "rd1_MayMoc";
+            this.rd1_MayMoc.Size = new System.Drawing.Size(89, 22);
+            this.rd1_MayMoc.TabIndex = 1;
+            this.rd1_MayMoc.Text = "Máy móc";
+            this.rd1_MayMoc.UseVisualStyleBackColor = true;
+            // 
+            // rd1_VatLieu
+            // 
+            this.rd1_VatLieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd1_VatLieu.AutoSize = true;
+            this.rd1_VatLieu.Location = new System.Drawing.Point(3, 87);
+            this.rd1_VatLieu.Name = "rd1_VatLieu";
+            this.rd1_VatLieu.Size = new System.Drawing.Size(74, 22);
+            this.rd1_VatLieu.TabIndex = 1;
+            this.rd1_VatLieu.Text = "Vật liệu";
+            this.rd1_VatLieu.UseVisualStyleBackColor = true;
+            // 
+            // rd2_ConNguoi
+            // 
+            this.rd2_ConNguoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd2_ConNguoi.AutoSize = true;
+            this.rd2_ConNguoi.Location = new System.Drawing.Point(3, 3);
+            this.rd2_ConNguoi.Name = "rd2_ConNguoi";
+            this.rd2_ConNguoi.Size = new System.Drawing.Size(95, 22);
+            this.rd2_ConNguoi.TabIndex = 1;
+            this.rd2_ConNguoi.Text = "Con người";
+            this.rd2_ConNguoi.UseVisualStyleBackColor = true;
+            // 
+            // rd2_PhuongPhap
+            // 
+            this.rd2_PhuongPhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd2_PhuongPhap.AutoSize = true;
+            this.rd2_PhuongPhap.Location = new System.Drawing.Point(3, 31);
+            this.rd2_PhuongPhap.Name = "rd2_PhuongPhap";
+            this.rd2_PhuongPhap.Size = new System.Drawing.Size(114, 22);
+            this.rd2_PhuongPhap.TabIndex = 1;
+            this.rd2_PhuongPhap.Text = "Phương pháp";
+            this.rd2_PhuongPhap.UseVisualStyleBackColor = true;
+            // 
+            // rd2_MayMoc
+            // 
+            this.rd2_MayMoc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd2_MayMoc.AutoSize = true;
+            this.rd2_MayMoc.Location = new System.Drawing.Point(3, 59);
+            this.rd2_MayMoc.Name = "rd2_MayMoc";
+            this.rd2_MayMoc.Size = new System.Drawing.Size(89, 22);
+            this.rd2_MayMoc.TabIndex = 1;
+            this.rd2_MayMoc.Text = "Máy móc";
+            this.rd2_MayMoc.UseVisualStyleBackColor = true;
+            // 
+            // rd2_VatLieu
+            // 
+            this.rd2_VatLieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rd2_VatLieu.AutoSize = true;
+            this.rd2_VatLieu.Location = new System.Drawing.Point(3, 87);
+            this.rd2_VatLieu.Name = "rd2_VatLieu";
+            this.rd2_VatLieu.Size = new System.Drawing.Size(74, 22);
+            this.rd2_VatLieu.TabIndex = 1;
+            this.rd2_VatLieu.Text = "Vật liệu";
+            this.rd2_VatLieu.UseVisualStyleBackColor = true;
+            // 
             // FormUpdateSolution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -372,17 +384,17 @@
         private System.Windows.Forms.RichTextBox RichDoiSach;
         private System.Windows.Forms.RichTextBox richNguyenNhan;
         private Sunny.UI.UIButton btnUpdate;
-        private System.Windows.Forms.RadioButton rd1_ConNguoi;
-        private System.Windows.Forms.RadioButton rd1_PhuongPhap;
-        private System.Windows.Forms.RadioButton rd1_MayMoc;
-        private System.Windows.Forms.RadioButton rd1_VatLieu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.RadioButton rd2_ConNguoi;
-        private System.Windows.Forms.RadioButton rd2_PhuongPhap;
-        private System.Windows.Forms.RadioButton rd2_MayMoc;
-        private System.Windows.Forms.RadioButton rd2_VatLieu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtime;
+        private System.Windows.Forms.CheckBox rd1_ConNguoi;
+        private System.Windows.Forms.CheckBox rd1_PhuongPhap;
+        private System.Windows.Forms.CheckBox rd1_MayMoc;
+        private System.Windows.Forms.CheckBox rd1_VatLieu;
+        private System.Windows.Forms.CheckBox rd2_ConNguoi;
+        private System.Windows.Forms.CheckBox rd2_PhuongPhap;
+        private System.Windows.Forms.CheckBox rd2_MayMoc;
+        private System.Windows.Forms.CheckBox rd2_VatLieu;
     }
 }
