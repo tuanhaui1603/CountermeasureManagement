@@ -13,5 +13,8 @@ namespace CountermeasureManagement
         public static string Level { get; set; }
         public static string InsertOrDelete; 
         public static List<DataRecord> dataRecords = new List<DataRecord>();
+        public static bool CheckExecuteQueryMySql = false;
+        public static string MessageErrorExecuteQueryMySql;
+        public static string ImageUrl;
     }
 }

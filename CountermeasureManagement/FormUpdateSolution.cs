@@ -51,6 +51,7 @@ namespace CountermeasureManagement
                     if (dlt == DialogResult.Yes)
                     {
                         await UpdateDoiSach();
+                       
                     }
                 }              
             }
@@ -109,7 +110,15 @@ namespace CountermeasureManagement
                 await db.ExecuteNonQueryAsync(query);
                 await db.ExecuteNonQueryAsync(query_4m_nguyenNhan);
                 await db.ExecuteNonQueryAsync(query_4m_doiSach);
-                MessageBox.Show("Update đối sách thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Global.CheckExecuteQueryMySql)
+                {
+                    MessageBox.Show("Update đối sách thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi kết nối đến server để update đối sách: " + Global.MessageErrorExecuteQueryMySql, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }             
             }
             catch
             {

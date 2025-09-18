@@ -150,13 +150,17 @@ namespace CountermeasureManagement
                     // Vẫn await việc thực thi reader
                     using (var reader = await cmd.ExecuteReaderAsync())
                     {
+                        Global.CheckExecuteQueryMySql = true;
                         dt.Load(reader);
+                       
                     }
                 }
             }
             catch (Exception ex)
             {
-                await WriteLogAsync("Lỗi GetDataTableAsync: " + ex.Message);
+                Global.CheckExecuteQueryMySql = false;
+                Global.MessageErrorExecuteQueryMySql = ex.ToString();
+                await WriteLogAsync("Lỗi GetDataTableAsync: " + ex.ToString());
             }
             return dt;
         }
@@ -169,12 +173,15 @@ namespace CountermeasureManagement
                 await OpenAsync();
                 using (var cmd = new MySqlCommand(sql, _conn))
                 {
+                    Global.CheckExecuteQueryMySql = true;
                     return await cmd.ExecuteNonQueryAsync();
                 }
             }
             catch (Exception ex)
             {
-                await WriteLogAsync("Lỗi ExecuteNonQueryAsync: " + ex.Message);
+                Global.CheckExecuteQueryMySql = false;
+                Global.MessageErrorExecuteQueryMySql = ex.ToString();
+                await WriteLogAsync("Lỗi ExecuteNonQueryAsync: " + ex.ToString());
                 return -1;
             }
         }
@@ -192,7 +199,7 @@ namespace CountermeasureManagement
             }
             catch (Exception ex)
             {
-                await WriteLogAsync("Lỗi ExecuteScalarAsync: " + ex.Message);
+                await WriteLogAsync("Lỗi ExecuteScalarAsync: " + ex.ToString());
                 return null;
             }
         }

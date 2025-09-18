@@ -62,11 +62,76 @@ namespace CountermeasureManagement
 
             }
         }
-
+        private void ResetSummary()
+        {
+            lbSumTongSoLoi.Text = lbSumMasV.Text = lbSumKhacHang.Text
+            = lbSumDaHoanThanh.Text = lbSumChuaHoanThanh.Text = lbSumQuaHan.Text
+            = lbSumRankA.Text = lbSumRankB.Text = lbSumRankC.Text
+            = lbSumRankPhanNan.Text = lbSumRankTuChoi.Text = lbSumRankOther.Text
+           = lbSum4mConNguoi.Text = lbSum4mPhuongPhap.Text = lbSum4mmayMoc.Text = lbSum4mVatLieu.Text = "0";
+        }
+        private void ResetSummary4MnguyenNhan()
+        {
+           lbSum4mConNguoi.Text = lbSum4mPhuongPhap.Text = lbSum4mmayMoc.Text = lbSum4mVatLieu.Text = "0";
+        }
+        private async Task LoadSummary()
+        {
+            ResetSummary();
+            string query = "SELECT COUNT(*) AS 'Tổng số lỗi', SUM(CASE WHEN `area` IN ('ASSY', 'IQC', 'OQC') THEN 1 ELSE 0 END) AS 'Mas-V'," +
+                "\r\n    SUM(CASE WHEN `area` = 'Khách hàng' THEN 1 ELSE 0 END) AS 'Khách hàng'," +
+                "\r\n    SUM(CASE WHEN `status_error` = 'O' THEN 1 ELSE 0 END) AS 'Đã hoàn thành'," +
+                "\r\n    SUM(CASE WHEN `status_error` = 'Y' THEN 1 ELSE 0 END) AS 'Chưa hoàn thành'," +
+                "\r\n    SUM(CASE WHEN `status_error` = 'X' THEN 1 ELSE 0 END) AS 'Quá hạn'," +
+                "\r\n    SUM(CASE WHEN `rank` = 'A' THEN 1 ELSE 0 END) AS 'RankA'," +
+                "\r\n    SUM(CASE WHEN `rank` = 'B' THEN 1 ELSE 0 END) AS 'RankB'," +
+                "\r\n    SUM(CASE WHEN `rank` = 'C' THEN 1 ELSE 0 END) AS 'RankC'," +
+                "\r\n    SUM(CASE WHEN `rank` = 'Phàn nàn' THEN 1 ELSE 0 END) AS 'Phàn nàn'," +
+                "\r\n    SUM(CASE WHEN `rank` = 'Từ chối' THEN 1 ELSE 0 END) AS 'Từ chối'," +
+                "\r\n    SUM(CASE WHEN `rank` = 'Other' THEN 1 ELSE 0 END) AS 'Other'" +
+                $"\r\nFROM `data` WHERE `date` BETWEEN '{dtime1.Text}' and '{dtime2.Text}'";
+            DataTable dt = await db.GetDataTableAsync(query);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                lbSumTongSoLoi.Text = (dt.Rows[0][0].ToString() != "") ? dt.Rows[0][0].ToString() : "0";
+                lbSumMasV.Text = (dt.Rows[0][1].ToString() != "") ? dt.Rows[0][1].ToString() : "0";
+                lbSumKhacHang.Text = (dt.Rows[0][2].ToString() != "") ? dt.Rows[0][2].ToString() : "0";
+                lbSumDaHoanThanh.Text = (dt.Rows[0][3].ToString() != "") ? dt.Rows[0][3].ToString() : "0";
+                lbSumChuaHoanThanh.Text = (dt.Rows[0][4].ToString() != "") ? dt.Rows[0][4].ToString() : "0";
+                lbSumQuaHan.Text = (dt.Rows[0][5].ToString() != "") ? dt.Rows[0][5].ToString() : "0";
+                lbSumRankA.Text = (dt.Rows[0][6].ToString() != "") ? dt.Rows[0][6].ToString() : "0";
+                lbSumRankB.Text = (dt.Rows[0][7].ToString() != "") ? dt.Rows[0][7].ToString() : "0";
+                lbSumRankC.Text = (dt.Rows[0][8].ToString() != "") ? dt.Rows[0][8].ToString() : "0";
+                lbSumRankPhanNan.Text = (dt.Rows[0][9].ToString() != "") ? dt.Rows[0][9].ToString() : "0";
+                lbSumRankTuChoi.Text = (dt.Rows[0][10].ToString() != "") ? dt.Rows[0][10].ToString() : "0";
+                lbSumRankOther.Text = (dt.Rows[0][11].ToString() != "") ? dt.Rows[0][11].ToString() : "0";
+            }
+        }
+        private async Task LoadSummary4MNguyenNhan()
+        {
+            ResetSummary4MnguyenNhan();
+            string query = "SELECT \r\nSUM(CASE WHEN `con_nguoi` = '1' THEN 1 ELSE 0 END) AS 'Con người' ," +
+                "\r\nSUM(CASE WHEN `phuong_phap` = '1' THEN 1 ELSE 0 END) AS 'Phương pháp' ," +
+                "\r\nSUM(CASE WHEN `may_moc` = '1' THEN 1 ELSE 0 END) AS 'Máy móc' ," +
+                "\r\nSUM(CASE WHEN `vat_lieu` = '1' THEN 1 ELSE 0 END) AS 'Vật liệu'" +
+                " \r\nFROM `data` LEFT JOIN reason ON data.no = reason.no_id" +
+                $" \r\nWHERE `date` BETWEEN '{dtime1.Text}' and '{dtime2.Text}'";
+            DataTable dt = await db.GetDataTableAsync(query);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                lbSum4mConNguoi.Text = (dt.Rows[0][0].ToString() != "") ? dt.Rows[0][0].ToString() : "0";
+                lbSum4mPhuongPhap.Text = (dt.Rows[0][1].ToString() != "") ? dt.Rows[0][1].ToString() : "0";
+                lbSum4mmayMoc.Text = (dt.Rows[0][2].ToString() != "") ? dt.Rows[0][2].ToString() : "0";
+                lbSum4mVatLieu.Text = (dt.Rows[0][3].ToString() != "") ? dt.Rows[0][3].ToString() : "0";
+            }
+        }
         private async void btnLamMoi_Click(object sender, EventArgs e)
         {
             btnLamMoi.Enabled = false;
+            btnLamMoi.Text = "Đang tải...";
             await LoadDataAsync();
+            await LoadSummary();
+            await LoadSummary4MNguyenNhan();
+            btnLamMoi.Text = "Làm mới";
             btnLamMoi.Enabled = true;
         }
         private async Task LoadDataAsync()
@@ -75,23 +140,58 @@ namespace CountermeasureManagement
             {
                 _NO_ = "";
                 Global.dataRecords.Clear();
-                string query = "SELECT data.`no`, data.date as 'Ngày', data.status_error as 'Tình trạng lỗi', data.part_name as 'PartName'," +
-                    " data.area as 'Khu vực phát sinh', data.ncc_c1 as 'NCC Cấp1', data.ncc_c2 as 'NCC Cấp2', data.pic_qc as 'PIC QC'," +
-                    " `image`, data.content_error as 'Nội dung lỗi', data.old_error as 'Cũ',data.new_error as 'Mới',data.rank as 'Rank'," +
-                    " data.qty as 'Qty', data.qty_total as 'Qty Total', data.solution as 'Phương án xử lý lỗi', data.action as 'Action tạm thời'," +
-                    "data.plan_complete as 'Plan ht đối sách',data_reason_solution.actual_date_completed_plan as 'Thực tế ht đối sách'," +
-                    "data_reason_solution.reason as 'Nguyên nhân',data_reason_solution.solution as 'Đối sách' " +
-                    "FROM data LEFT JOIN data_reason_solution ON data.no = data_reason_solution.no_id " +
-                    $"where data.date between '{dtime1.Text}' and '{dtime2.Text}' and data.ncc_c1 like '%{tbNccSearch.Text.Trim()}%' " +
-                    $"and data.rank like '%{cbRankSearch.Text.Trim()}%' order by data.date DESC";
+                string query = "SELECT data.`no`,  data.date as 'Ngày', data.status_error as 'Tình trạng lỗi',data.part_name as 'PartName', " +
+                    "\r\n    data.area as 'Khu vực phát sinh', " +
+                    "\r\n    data.ncc_c1 as 'NCC Cấp1'," +
+                    "\r\n    data.ncc_c2 as 'NCC Cấp2', " +
+                    "\r\n    data.pic_qc as 'PIC QC', " +
+                    "\r\n    `image` as 'Hình ảnh', " +
+                    "\r\n    data.content_error as 'Nội dung lỗi', " +
+                    "\r\n    data.old_error as 'Cũ'," +
+                    "\r\n    data.new_error as 'Mới'," +
+                    "\r\n    data.rank as 'Rank', " +
+                    "\r\n    data.qty as 'Qty', " +
+                    "\r\n    data.qty_total as 'Qty Total', " +
+                    "\r\n    data.solution as 'Phương án xử lý lỗi', " +
+                    "\r\n    data.action as 'Action tạm thời'," +
+                    "\r\n    data.plan_complete as 'Plan ht đối sách'," +
+                    "\r\n    data_reason_solution.actual_date_completed_plan as 'Thực tế ht đối sách'," +
+                    "\r\n    data_reason_solution.reason as 'Nguyên nhân'," +
+                    "\r\n    data_reason_solution.solution as 'Đối sách'," +
+                    "\r\n   reason.con_nguoi as '4M(nn):Con người'," +
+                    "\r\n    reason.phuong_phap as '4M(nn):Phương pháp'," +
+                    "\r\n    reason.may_moc as '4M(nn):Máy móc'," +
+                    "\r\n    reason.vat_lieu as '4M(nn): Vật liệu'," +
+                    "\r\n    method.con_nguoi as '4M(pp):Con người'," +
+                    "\r\n    method.phuong_phap as '4M(pp):Phương pháp'," +
+                    "\r\n    method.may_moc as '4M(pp):Máy móc'," +
+                    "\r\n    method.vat_lieu as '4M(pp):Vật liệu'" +
+                    "\r\n   FROM data LEFT JOIN data_reason_solution ON data.no = data_reason_solution.no_id LEFT JOIN" +
+                    "  reason ON data.no = reason.no_id LEFT JOIN  method ON data.no = method.no_id " +
+                    $"WHERE data.date BETWEEN '{dtime1.Text}' and '{dtime2.Text}'" +
+                    $" and data.ncc_c1 like '%{tbNccSearch.Text.Trim()}%'" +
+                    $" and data.rank like '%{cbRankSearch.Text.Trim()}%' ORDER BY data.date DESC;";
                 dtg1.DataSource = await db.GetDataTableAsync(query);
-                dtg1.Columns[0].DefaultCellStyle.ForeColor = Color.Blue;
-                dtg1.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-                dtg1.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-                dtg1.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-                dtg1.Columns[9].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-                dtg1.Columns[16].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-                dtg1.Columns[19].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                if (Global.CheckExecuteQueryMySql)
+                {
+                    dtg1.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 9);
+                    dtg1.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 11);
+                    dtg1.Columns[0].DefaultCellStyle.ForeColor = Color.Blue;
+                    dtg1.Columns[8].DefaultCellStyle.ForeColor = Color.Blue;
+                    dtg1.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                    dtg1.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                    dtg1.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                    dtg1.Columns[9].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                    dtg1.Columns[16].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                    dtg1.Columns[19].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi kết nối database: " + Global.MessageErrorExecuteQueryMySql, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    WriteLog("Lỗi kết nối database: " + Global.MessageErrorExecuteQueryMySql);
+                }
+
             }
             catch (Exception ex)
             {
@@ -200,8 +300,16 @@ namespace CountermeasureManagement
                     {
                         string query1 = $"DELETE FROM data WHERE no = '{_NO_}'";
                         await db.ExecuteNonQueryAsync(query1);
-                        MessageBox.Show("Xóa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        await LoadDataAsync();
+                        if (Global.CheckExecuteQueryMySql)
+                        {
+                            MessageBox.Show("Xóa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            await LoadDataAsync();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Lỗi xóa dữ liệu: " + Global.MessageErrorExecuteQueryMySql, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            WriteLog("Lỗi xóa dữ liệu: " + Global.MessageErrorExecuteQueryMySql);
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -230,6 +338,12 @@ namespace CountermeasureManagement
 
                     }
                     dtg1.CurrentRow.DefaultCellStyle.BackColor = Color.Gray;
+                }
+                else if (e.ColumnIndex == 8)
+                {
+                    Global.ImageUrl = dtg1.Rows[e.RowIndex].Cells[8].Value.ToString();
+                    FormImage formImage = new FormImage();
+                    formImage.ShowDialog();
                 }
             }
             catch
@@ -280,12 +394,19 @@ namespace CountermeasureManagement
         {
             if (_NO_ != "" && _NO_ != null)
             {
-                Global.dataRecords = new List<DataRecord>();
-                DataRecord record = new DataRecord();
-                record.No = dtg1.CurrentRow.Cells[0].Value.ToString();
-                Global.dataRecords.Add(record);
-                FormUpdateSolution fom = new FormUpdateSolution();
-                fom.ShowDialog();
+                if (dtg1.CurrentRow.Cells[19].Value.ToString() == "")
+                {
+                    Global.dataRecords = new List<DataRecord>();
+                    DataRecord record = new DataRecord();
+                    record.No = dtg1.CurrentRow.Cells[0].Value.ToString();
+                    Global.dataRecords.Add(record);
+                    FormUpdateSolution fom = new FormUpdateSolution();
+                    fom.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Bạn đã update đối sách này rồi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {

@@ -249,7 +249,15 @@ namespace CountermeasureManagement
                     $",'{IMAGE_URL}','{richNoiDungLoi.Text}','{rd11}','{rd22}','{cbMucDoQuanTrong.Text}','{numQty.Value}',''," +
                     $"'{cbPhuongAnXuLy.Text}','{richActionTamThoi.Text}','{dtime2.Text}','{Global.Name}','{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}')";
                 await db.ExecuteNonQueryAsync(query);
-                MessageBox.Show("Thêm dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(Global.CheckExecuteQueryMySql)
+                {
+                    MessageBox.Show("Thêm dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi thêm dữ liệu: " + Global.MessageErrorExecuteQueryMySql, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }              
             }
             catch (Exception ex)
             {
@@ -273,7 +281,15 @@ namespace CountermeasureManagement
                     $"`solution`='{cbPhuongAnXuLy.Text.Trim()}',`action`='{richActionTamThoi.Text.Trim()}',`plan_complete`='{dtime2.Text.Trim()}'" +
                     $" WHERE `no` = '{_NO_}'";
                 await db.ExecuteNonQueryAsync(query);
-                MessageBox.Show("Sửa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Global.CheckExecuteQueryMySql)
+                {
+                    MessageBox.Show("Sửa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi sửa dữ liệu: " + Global.MessageErrorExecuteQueryMySql, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }               
             }
             catch (Exception ex)
             {

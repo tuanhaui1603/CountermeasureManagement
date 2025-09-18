@@ -60,20 +60,21 @@
             this.uiLabel7 = new Sunny.UI.UILabel();
             this.uiLabel8 = new Sunny.UI.UILabel();
             this.uiLabel9 = new Sunny.UI.UILabel();
-            this.uiLabel10 = new Sunny.UI.UILabel();
+            this.lbSumRankPhanNanss = new Sunny.UI.UILabel();
             this.uiLabel11 = new Sunny.UI.UILabel();
             this.uiLabel12 = new Sunny.UI.UILabel();
-            this.uiSmoothLabel3 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel4 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel5 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel6 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel7 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel8 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel9 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel10 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel11 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel12 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel13 = new Sunny.UI.UISmoothLabel();
+            this.lbSumTongSoLoi = new System.Windows.Forms.Label();
+            this.lbSumMasV = new System.Windows.Forms.Label();
+            this.lbSumKhacHang = new System.Windows.Forms.Label();
+            this.lbSumDaHoanThanh = new System.Windows.Forms.Label();
+            this.lbSumChuaHoanThanh = new System.Windows.Forms.Label();
+            this.lbSumQuaHan = new System.Windows.Forms.Label();
+            this.lbSumRankA = new System.Windows.Forms.Label();
+            this.lbSumRankB = new System.Windows.Forms.Label();
+            this.lbSumRankC = new System.Windows.Forms.Label();
+            this.lbSumRankPhanNan = new System.Windows.Forms.Label();
+            this.lbSumRankTuChoi = new System.Windows.Forms.Label();
+            this.lbSumRankOther = new System.Windows.Forms.Label();
             this.uiTableLayoutPanel7 = new Sunny.UI.UITableLayoutPanel();
             this.uiLabel17 = new Sunny.UI.UILabel();
             this.uiTableLayoutPanel8 = new Sunny.UI.UITableLayoutPanel();
@@ -81,10 +82,10 @@
             this.uiLabel14 = new Sunny.UI.UILabel();
             this.uiLabel15 = new Sunny.UI.UILabel();
             this.uiLabel16 = new Sunny.UI.UILabel();
-            this.uiSmoothLabel14 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel15 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel16 = new Sunny.UI.UISmoothLabel();
-            this.uiSmoothLabel17 = new Sunny.UI.UISmoothLabel();
+            this.lbSum4mConNguoi = new Sunny.UI.UISmoothLabel();
+            this.lbSum4mPhuongPhap = new Sunny.UI.UISmoothLabel();
+            this.lbSum4mmayMoc = new Sunny.UI.UISmoothLabel();
+            this.lbSum4mVatLieu = new Sunny.UI.UISmoothLabel();
             this.dtg1 = new System.Windows.Forms.DataGridView();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -431,20 +432,21 @@
             this.uiTableLayoutPanel5.Controls.Add(this.uiLabel7, 4, 0);
             this.uiTableLayoutPanel5.Controls.Add(this.uiLabel8, 4, 1);
             this.uiTableLayoutPanel5.Controls.Add(this.uiLabel9, 4, 2);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiLabel10, 6, 0);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankPhanNanss, 6, 0);
             this.uiTableLayoutPanel5.Controls.Add(this.uiLabel11, 6, 1);
             this.uiTableLayoutPanel5.Controls.Add(this.uiLabel12, 6, 2);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel3, 1, 1);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel4, 1, 2);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel5, 3, 2);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel6, 3, 1);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel7, 3, 0);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel8, 5, 0);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel9, 5, 1);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel10, 5, 2);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel11, 7, 2);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel12, 7, 1);
-            this.uiTableLayoutPanel5.Controls.Add(this.uiSmoothLabel13, 7, 0);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumTongSoLoi, 1, 0);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumMasV, 1, 1);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumKhacHang, 1, 2);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumDaHoanThanh, 3, 0);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumChuaHoanThanh, 3, 1);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumQuaHan, 3, 2);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankA, 5, 0);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankB, 5, 1);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankC, 5, 2);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankPhanNan, 7, 0);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankTuChoi, 7, 1);
+            this.uiTableLayoutPanel5.Controls.Add(this.lbSumRankOther, 7, 2);
             this.uiTableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiTableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.uiTableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
@@ -583,19 +585,19 @@
             this.uiLabel9.Text = "Rank C";
             this.uiLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiLabel10
+            // lbSumRankPhanNanss
             // 
-            this.uiLabel10.BackColor = System.Drawing.Color.CadetBlue;
-            this.uiLabel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.uiLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel10.Location = new System.Drawing.Point(496, 1);
-            this.uiLabel10.Margin = new System.Windows.Forms.Padding(0);
-            this.uiLabel10.Name = "uiLabel10";
-            this.uiLabel10.Size = new System.Drawing.Size(98, 61);
-            this.uiLabel10.TabIndex = 0;
-            this.uiLabel10.Text = "Phàn nàn";
-            this.uiLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumRankPhanNanss.BackColor = System.Drawing.Color.CadetBlue;
+            this.lbSumRankPhanNanss.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankPhanNanss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lbSumRankPhanNanss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.lbSumRankPhanNanss.Location = new System.Drawing.Point(496, 1);
+            this.lbSumRankPhanNanss.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankPhanNanss.Name = "lbSumRankPhanNanss";
+            this.lbSumRankPhanNanss.Size = new System.Drawing.Size(98, 61);
+            this.lbSumRankPhanNanss.TabIndex = 0;
+            this.lbSumRankPhanNanss.Text = "Phàn nàn";
+            this.lbSumRankPhanNanss.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uiLabel11
             // 
@@ -625,159 +627,185 @@
             this.uiLabel12.Text = "Other";
             this.uiLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel3
+            // lbSumTongSoLoi
             // 
-            this.uiSmoothLabel3.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel3.Location = new System.Drawing.Point(100, 63);
-            this.uiSmoothLabel3.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel3.Name = "uiSmoothLabel3";
-            this.uiSmoothLabel3.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel3.Size = new System.Drawing.Size(65, 61);
-            this.uiSmoothLabel3.TabIndex = 1;
-            this.uiSmoothLabel3.Text = "0";
-            this.uiSmoothLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumTongSoLoi.AutoSize = true;
+            this.lbSumTongSoLoi.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumTongSoLoi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumTongSoLoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumTongSoLoi.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumTongSoLoi.Location = new System.Drawing.Point(100, 1);
+            this.lbSumTongSoLoi.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumTongSoLoi.Name = "lbSumTongSoLoi";
+            this.lbSumTongSoLoi.Size = new System.Drawing.Size(65, 61);
+            this.lbSumTongSoLoi.TabIndex = 2;
+            this.lbSumTongSoLoi.Text = "0";
+            this.lbSumTongSoLoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel4
+            // lbSumMasV
             // 
-            this.uiSmoothLabel4.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel4.Location = new System.Drawing.Point(100, 125);
-            this.uiSmoothLabel4.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel4.Name = "uiSmoothLabel4";
-            this.uiSmoothLabel4.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel4.Size = new System.Drawing.Size(65, 63);
-            this.uiSmoothLabel4.TabIndex = 1;
-            this.uiSmoothLabel4.Text = "0";
-            this.uiSmoothLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumMasV.AutoSize = true;
+            this.lbSumMasV.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumMasV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumMasV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumMasV.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumMasV.Location = new System.Drawing.Point(100, 63);
+            this.lbSumMasV.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumMasV.Name = "lbSumMasV";
+            this.lbSumMasV.Size = new System.Drawing.Size(65, 61);
+            this.lbSumMasV.TabIndex = 2;
+            this.lbSumMasV.Text = "0";
+            this.lbSumMasV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel5
+            // lbSumKhacHang
             // 
-            this.uiSmoothLabel5.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel5.Location = new System.Drawing.Point(265, 125);
-            this.uiSmoothLabel5.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel5.Name = "uiSmoothLabel5";
-            this.uiSmoothLabel5.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel5.Size = new System.Drawing.Size(65, 63);
-            this.uiSmoothLabel5.TabIndex = 1;
-            this.uiSmoothLabel5.Text = "0";
-            this.uiSmoothLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumKhacHang.AutoSize = true;
+            this.lbSumKhacHang.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumKhacHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumKhacHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumKhacHang.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumKhacHang.Location = new System.Drawing.Point(100, 125);
+            this.lbSumKhacHang.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumKhacHang.Name = "lbSumKhacHang";
+            this.lbSumKhacHang.Size = new System.Drawing.Size(65, 63);
+            this.lbSumKhacHang.TabIndex = 2;
+            this.lbSumKhacHang.Text = "0";
+            this.lbSumKhacHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel6
+            // lbSumDaHoanThanh
             // 
-            this.uiSmoothLabel6.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel6.Location = new System.Drawing.Point(265, 63);
-            this.uiSmoothLabel6.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel6.Name = "uiSmoothLabel6";
-            this.uiSmoothLabel6.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel6.Size = new System.Drawing.Size(65, 61);
-            this.uiSmoothLabel6.TabIndex = 1;
-            this.uiSmoothLabel6.Text = "0";
-            this.uiSmoothLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumDaHoanThanh.AutoSize = true;
+            this.lbSumDaHoanThanh.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumDaHoanThanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumDaHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumDaHoanThanh.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumDaHoanThanh.Location = new System.Drawing.Point(265, 1);
+            this.lbSumDaHoanThanh.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumDaHoanThanh.Name = "lbSumDaHoanThanh";
+            this.lbSumDaHoanThanh.Size = new System.Drawing.Size(65, 61);
+            this.lbSumDaHoanThanh.TabIndex = 2;
+            this.lbSumDaHoanThanh.Text = "0";
+            this.lbSumDaHoanThanh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel7
+            // lbSumChuaHoanThanh
             // 
-            this.uiSmoothLabel7.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel7.Location = new System.Drawing.Point(265, 1);
-            this.uiSmoothLabel7.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel7.Name = "uiSmoothLabel7";
-            this.uiSmoothLabel7.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel7.Size = new System.Drawing.Size(65, 61);
-            this.uiSmoothLabel7.TabIndex = 1;
-            this.uiSmoothLabel7.Text = "0";
-            this.uiSmoothLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumChuaHoanThanh.AutoSize = true;
+            this.lbSumChuaHoanThanh.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumChuaHoanThanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumChuaHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumChuaHoanThanh.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumChuaHoanThanh.Location = new System.Drawing.Point(265, 63);
+            this.lbSumChuaHoanThanh.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumChuaHoanThanh.Name = "lbSumChuaHoanThanh";
+            this.lbSumChuaHoanThanh.Size = new System.Drawing.Size(65, 61);
+            this.lbSumChuaHoanThanh.TabIndex = 2;
+            this.lbSumChuaHoanThanh.Text = "0";
+            this.lbSumChuaHoanThanh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel8
+            // lbSumQuaHan
             // 
-            this.uiSmoothLabel8.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel8.Location = new System.Drawing.Point(430, 1);
-            this.uiSmoothLabel8.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel8.Name = "uiSmoothLabel8";
-            this.uiSmoothLabel8.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel8.Size = new System.Drawing.Size(65, 61);
-            this.uiSmoothLabel8.TabIndex = 1;
-            this.uiSmoothLabel8.Text = "0";
-            this.uiSmoothLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumQuaHan.AutoSize = true;
+            this.lbSumQuaHan.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumQuaHan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumQuaHan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumQuaHan.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumQuaHan.Location = new System.Drawing.Point(265, 125);
+            this.lbSumQuaHan.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumQuaHan.Name = "lbSumQuaHan";
+            this.lbSumQuaHan.Size = new System.Drawing.Size(65, 63);
+            this.lbSumQuaHan.TabIndex = 2;
+            this.lbSumQuaHan.Text = "0";
+            this.lbSumQuaHan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel9
+            // lbSumRankA
             // 
-            this.uiSmoothLabel9.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel9.Location = new System.Drawing.Point(430, 63);
-            this.uiSmoothLabel9.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel9.Name = "uiSmoothLabel9";
-            this.uiSmoothLabel9.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel9.Size = new System.Drawing.Size(65, 61);
-            this.uiSmoothLabel9.TabIndex = 1;
-            this.uiSmoothLabel9.Text = "0";
-            this.uiSmoothLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumRankA.AutoSize = true;
+            this.lbSumRankA.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumRankA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumRankA.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumRankA.Location = new System.Drawing.Point(430, 1);
+            this.lbSumRankA.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankA.Name = "lbSumRankA";
+            this.lbSumRankA.Size = new System.Drawing.Size(65, 61);
+            this.lbSumRankA.TabIndex = 2;
+            this.lbSumRankA.Text = "0";
+            this.lbSumRankA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel10
+            // lbSumRankB
             // 
-            this.uiSmoothLabel10.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel10.Location = new System.Drawing.Point(430, 125);
-            this.uiSmoothLabel10.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel10.Name = "uiSmoothLabel10";
-            this.uiSmoothLabel10.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel10.Size = new System.Drawing.Size(65, 63);
-            this.uiSmoothLabel10.TabIndex = 1;
-            this.uiSmoothLabel10.Text = "0";
-            this.uiSmoothLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumRankB.AutoSize = true;
+            this.lbSumRankB.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumRankB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumRankB.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumRankB.Location = new System.Drawing.Point(430, 63);
+            this.lbSumRankB.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankB.Name = "lbSumRankB";
+            this.lbSumRankB.Size = new System.Drawing.Size(65, 61);
+            this.lbSumRankB.TabIndex = 2;
+            this.lbSumRankB.Text = "0";
+            this.lbSumRankB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel11
+            // lbSumRankC
             // 
-            this.uiSmoothLabel11.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel11.Location = new System.Drawing.Point(595, 125);
-            this.uiSmoothLabel11.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel11.Name = "uiSmoothLabel11";
-            this.uiSmoothLabel11.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel11.Size = new System.Drawing.Size(72, 63);
-            this.uiSmoothLabel11.TabIndex = 1;
-            this.uiSmoothLabel11.Text = "0";
-            this.uiSmoothLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumRankC.AutoSize = true;
+            this.lbSumRankC.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumRankC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumRankC.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumRankC.Location = new System.Drawing.Point(430, 125);
+            this.lbSumRankC.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankC.Name = "lbSumRankC";
+            this.lbSumRankC.Size = new System.Drawing.Size(65, 63);
+            this.lbSumRankC.TabIndex = 2;
+            this.lbSumRankC.Text = "0";
+            this.lbSumRankC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel12
+            // lbSumRankPhanNan
             // 
-            this.uiSmoothLabel12.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel12.Location = new System.Drawing.Point(595, 63);
-            this.uiSmoothLabel12.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel12.Name = "uiSmoothLabel12";
-            this.uiSmoothLabel12.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel12.Size = new System.Drawing.Size(72, 61);
-            this.uiSmoothLabel12.TabIndex = 1;
-            this.uiSmoothLabel12.Text = "0";
-            this.uiSmoothLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumRankPhanNan.AutoSize = true;
+            this.lbSumRankPhanNan.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumRankPhanNan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankPhanNan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumRankPhanNan.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumRankPhanNan.Location = new System.Drawing.Point(595, 1);
+            this.lbSumRankPhanNan.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankPhanNan.Name = "lbSumRankPhanNan";
+            this.lbSumRankPhanNan.Size = new System.Drawing.Size(72, 61);
+            this.lbSumRankPhanNan.TabIndex = 2;
+            this.lbSumRankPhanNan.Text = "0";
+            this.lbSumRankPhanNan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel13
+            // lbSumRankTuChoi
             // 
-            this.uiSmoothLabel13.BackColor = System.Drawing.Color.LightGray;
-            this.uiSmoothLabel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel13.Location = new System.Drawing.Point(595, 1);
-            this.uiSmoothLabel13.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel13.Name = "uiSmoothLabel13";
-            this.uiSmoothLabel13.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel13.Size = new System.Drawing.Size(72, 61);
-            this.uiSmoothLabel13.TabIndex = 1;
-            this.uiSmoothLabel13.Text = "0";
-            this.uiSmoothLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSumRankTuChoi.AutoSize = true;
+            this.lbSumRankTuChoi.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumRankTuChoi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankTuChoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumRankTuChoi.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumRankTuChoi.Location = new System.Drawing.Point(595, 63);
+            this.lbSumRankTuChoi.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankTuChoi.Name = "lbSumRankTuChoi";
+            this.lbSumRankTuChoi.Size = new System.Drawing.Size(72, 61);
+            this.lbSumRankTuChoi.TabIndex = 2;
+            this.lbSumRankTuChoi.Text = "0";
+            this.lbSumRankTuChoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbSumRankOther
+            // 
+            this.lbSumRankOther.AutoSize = true;
+            this.lbSumRankOther.BackColor = System.Drawing.Color.LightGray;
+            this.lbSumRankOther.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSumRankOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSumRankOther.ForeColor = System.Drawing.Color.Blue;
+            this.lbSumRankOther.Location = new System.Drawing.Point(595, 125);
+            this.lbSumRankOther.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSumRankOther.Name = "lbSumRankOther";
+            this.lbSumRankOther.Size = new System.Drawing.Size(72, 63);
+            this.lbSumRankOther.TabIndex = 2;
+            this.lbSumRankOther.Text = "0";
+            this.lbSumRankOther.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uiTableLayoutPanel7
             // 
@@ -823,10 +851,10 @@
             this.uiTableLayoutPanel8.Controls.Add(this.uiLabel14, 1, 0);
             this.uiTableLayoutPanel8.Controls.Add(this.uiLabel15, 2, 0);
             this.uiTableLayoutPanel8.Controls.Add(this.uiLabel16, 3, 0);
-            this.uiTableLayoutPanel8.Controls.Add(this.uiSmoothLabel14, 0, 1);
-            this.uiTableLayoutPanel8.Controls.Add(this.uiSmoothLabel15, 1, 1);
-            this.uiTableLayoutPanel8.Controls.Add(this.uiSmoothLabel16, 2, 1);
-            this.uiTableLayoutPanel8.Controls.Add(this.uiSmoothLabel17, 3, 1);
+            this.uiTableLayoutPanel8.Controls.Add(this.lbSum4mConNguoi, 0, 1);
+            this.uiTableLayoutPanel8.Controls.Add(this.lbSum4mPhuongPhap, 1, 1);
+            this.uiTableLayoutPanel8.Controls.Add(this.lbSum4mmayMoc, 2, 1);
+            this.uiTableLayoutPanel8.Controls.Add(this.lbSum4mVatLieu, 3, 1);
             this.uiTableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiTableLayoutPanel8.Location = new System.Drawing.Point(0, 63);
             this.uiTableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
@@ -894,61 +922,61 @@
             this.uiLabel16.Text = "Nguyên vật liệu";
             this.uiLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel14
+            // lbSum4mConNguoi
             // 
-            this.uiSmoothLabel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.uiSmoothLabel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel14.Location = new System.Drawing.Point(1, 63);
-            this.uiSmoothLabel14.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel14.Name = "uiSmoothLabel14";
-            this.uiSmoothLabel14.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel14.Size = new System.Drawing.Size(78, 62);
-            this.uiSmoothLabel14.TabIndex = 1;
-            this.uiSmoothLabel14.Text = "0";
-            this.uiSmoothLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSum4mConNguoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbSum4mConNguoi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSum4mConNguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSum4mConNguoi.Location = new System.Drawing.Point(1, 63);
+            this.lbSum4mConNguoi.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSum4mConNguoi.Name = "lbSum4mConNguoi";
+            this.lbSum4mConNguoi.RectColor = System.Drawing.Color.Blue;
+            this.lbSum4mConNguoi.Size = new System.Drawing.Size(78, 62);
+            this.lbSum4mConNguoi.TabIndex = 1;
+            this.lbSum4mConNguoi.Text = "0";
+            this.lbSum4mConNguoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel15
+            // lbSum4mPhuongPhap
             // 
-            this.uiSmoothLabel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.uiSmoothLabel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel15.Location = new System.Drawing.Point(80, 63);
-            this.uiSmoothLabel15.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel15.Name = "uiSmoothLabel15";
-            this.uiSmoothLabel15.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel15.Size = new System.Drawing.Size(78, 62);
-            this.uiSmoothLabel15.TabIndex = 1;
-            this.uiSmoothLabel15.Text = "0";
-            this.uiSmoothLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSum4mPhuongPhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbSum4mPhuongPhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSum4mPhuongPhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSum4mPhuongPhap.Location = new System.Drawing.Point(80, 63);
+            this.lbSum4mPhuongPhap.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSum4mPhuongPhap.Name = "lbSum4mPhuongPhap";
+            this.lbSum4mPhuongPhap.RectColor = System.Drawing.Color.Blue;
+            this.lbSum4mPhuongPhap.Size = new System.Drawing.Size(78, 62);
+            this.lbSum4mPhuongPhap.TabIndex = 1;
+            this.lbSum4mPhuongPhap.Text = "0";
+            this.lbSum4mPhuongPhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel16
+            // lbSum4mmayMoc
             // 
-            this.uiSmoothLabel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.uiSmoothLabel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel16.Location = new System.Drawing.Point(159, 63);
-            this.uiSmoothLabel16.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel16.Name = "uiSmoothLabel16";
-            this.uiSmoothLabel16.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel16.Size = new System.Drawing.Size(78, 62);
-            this.uiSmoothLabel16.TabIndex = 1;
-            this.uiSmoothLabel16.Text = "0";
-            this.uiSmoothLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSum4mmayMoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbSum4mmayMoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSum4mmayMoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSum4mmayMoc.Location = new System.Drawing.Point(159, 63);
+            this.lbSum4mmayMoc.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSum4mmayMoc.Name = "lbSum4mmayMoc";
+            this.lbSum4mmayMoc.RectColor = System.Drawing.Color.Blue;
+            this.lbSum4mmayMoc.Size = new System.Drawing.Size(78, 62);
+            this.lbSum4mmayMoc.TabIndex = 1;
+            this.lbSum4mmayMoc.Text = "0";
+            this.lbSum4mmayMoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiSmoothLabel17
+            // lbSum4mVatLieu
             // 
-            this.uiSmoothLabel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.uiSmoothLabel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSmoothLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.uiSmoothLabel17.Location = new System.Drawing.Point(238, 63);
-            this.uiSmoothLabel17.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSmoothLabel17.Name = "uiSmoothLabel17";
-            this.uiSmoothLabel17.RectColor = System.Drawing.Color.Blue;
-            this.uiSmoothLabel17.Size = new System.Drawing.Size(78, 62);
-            this.uiSmoothLabel17.TabIndex = 1;
-            this.uiSmoothLabel17.Text = "0";
-            this.uiSmoothLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSum4mVatLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbSum4mVatLieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSum4mVatLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbSum4mVatLieu.Location = new System.Drawing.Point(238, 63);
+            this.lbSum4mVatLieu.Margin = new System.Windows.Forms.Padding(0);
+            this.lbSum4mVatLieu.Name = "lbSum4mVatLieu";
+            this.lbSum4mVatLieu.RectColor = System.Drawing.Color.Blue;
+            this.lbSum4mVatLieu.Size = new System.Drawing.Size(78, 62);
+            this.lbSum4mVatLieu.TabIndex = 1;
+            this.lbSum4mVatLieu.Text = "0";
+            this.lbSum4mVatLieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dtg1
             // 
@@ -1039,6 +1067,7 @@
             this.tableLayoutPanel2.PerformLayout();
             this.uiTableLayoutPanel6.ResumeLayout(false);
             this.uiTableLayoutPanel5.ResumeLayout(false);
+            this.uiTableLayoutPanel5.PerformLayout();
             this.uiTableLayoutPanel7.ResumeLayout(false);
             this.uiTableLayoutPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtg1)).EndInit();
@@ -1071,21 +1100,10 @@
         private Sunny.UI.UILabel uiLabel7;
         private Sunny.UI.UILabel uiLabel8;
         private Sunny.UI.UILabel uiLabel9;
-        private Sunny.UI.UILabel uiLabel10;
+        private Sunny.UI.UILabel lbSumRankPhanNanss;
         private Sunny.UI.UILabel uiLabel11;
         private Sunny.UI.UILabel uiLabel12;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel6;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel3;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel4;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel5;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel6;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel7;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel8;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel9;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel10;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel11;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel12;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel13;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel7;
         private Sunny.UI.UILabel uiLabel17;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel8;
@@ -1093,10 +1111,10 @@
         private Sunny.UI.UILabel uiLabel14;
         private Sunny.UI.UILabel uiLabel15;
         private Sunny.UI.UILabel uiLabel16;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel14;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel15;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel16;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel17;
+        private Sunny.UI.UISmoothLabel lbSum4mConNguoi;
+        private Sunny.UI.UISmoothLabel lbSum4mPhuongPhap;
+        private Sunny.UI.UISmoothLabel lbSum4mmayMoc;
+        private Sunny.UI.UISmoothLabel lbSum4mVatLieu;
         private Sunny.UI.UILabel uiLabel18;
         private System.Windows.Forms.DateTimePicker dtime1;
         private System.Windows.Forms.DateTimePicker dtime2;
@@ -1108,6 +1126,18 @@
         private System.Windows.Forms.TextBox tbNccSearch;
         private System.Windows.Forms.ComboBox cbRankSearch;
         private Sunny.UI.UIButton btnUpdateDoiSach;
+        private System.Windows.Forms.Label lbSumTongSoLoi;
+        private System.Windows.Forms.Label lbSumMasV;
+        private System.Windows.Forms.Label lbSumKhacHang;
+        private System.Windows.Forms.Label lbSumDaHoanThanh;
+        private System.Windows.Forms.Label lbSumChuaHoanThanh;
+        private System.Windows.Forms.Label lbSumQuaHan;
+        private System.Windows.Forms.Label lbSumRankA;
+        private System.Windows.Forms.Label lbSumRankB;
+        private System.Windows.Forms.Label lbSumRankC;
+        private System.Windows.Forms.Label lbSumRankPhanNan;
+        private System.Windows.Forms.Label lbSumRankTuChoi;
+        private System.Windows.Forms.Label lbSumRankOther;
     }
 }
 

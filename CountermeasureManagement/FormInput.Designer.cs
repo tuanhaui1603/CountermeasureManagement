@@ -446,7 +446,7 @@
             "O",
             "Y",
             "X"});
-            this.cbTinhTrangLoi.Location = new System.Drawing.Point(195, 86);
+            this.cbTinhTrangLoi.Location = new System.Drawing.Point(195, 82);
             this.cbTinhTrangLoi.Name = "cbTinhTrangLoi";
             this.cbTinhTrangLoi.Size = new System.Drawing.Size(243, 28);
             this.cbTinhTrangLoi.TabIndex = 6;
@@ -469,7 +469,7 @@
             "OQC",
             "KHÁCH HÀNG",
             "THỊ TRƯỜNG"});
-            this.cbKvPhatSinh.Location = new System.Drawing.Point(195, 200);
+            this.cbKvPhatSinh.Location = new System.Drawing.Point(195, 197);
             this.cbKvPhatSinh.Name = "cbKvPhatSinh";
             this.cbKvPhatSinh.Size = new System.Drawing.Size(243, 28);
             this.cbKvPhatSinh.TabIndex = 8;
@@ -482,7 +482,7 @@
             "Mr Chất",
             "Mrs Đạt",
             "Mr Đức"});
-            this.cbPicPqc.Location = new System.Drawing.Point(195, 380);
+            this.cbPicPqc.Location = new System.Drawing.Point(195, 383);
             this.cbPicPqc.Name = "cbPicPqc";
             this.cbPicPqc.Size = new System.Drawing.Size(243, 28);
             this.cbPicPqc.TabIndex = 8;
@@ -505,8 +505,9 @@
             "B",
             "C",
             "Phàn nàn",
-            "Từ chối"});
-            this.cbMucDoQuanTrong.Location = new System.Drawing.Point(195, 624);
+            "Từ chối",
+            "Other"});
+            this.cbMucDoQuanTrong.Location = new System.Drawing.Point(195, 627);
             this.cbMucDoQuanTrong.Name = "cbMucDoQuanTrong";
             this.cbMucDoQuanTrong.Size = new System.Drawing.Size(243, 28);
             this.cbMucDoQuanTrong.TabIndex = 8;
@@ -674,7 +675,7 @@
             "NG-Report",
             "Trouble Information",
             "Thông tin cải tiến"});
-            this.cbPhuongAnXuLy.Location = new System.Drawing.Point(173, 12);
+            this.cbPhuongAnXuLy.Location = new System.Drawing.Point(173, 15);
             this.cbPhuongAnXuLy.Name = "cbPhuongAnXuLy";
             this.cbPhuongAnXuLy.Size = new System.Drawing.Size(475, 28);
             this.cbPhuongAnXuLy.TabIndex = 8;
